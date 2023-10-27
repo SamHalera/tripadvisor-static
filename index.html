@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/7cceef8598.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- BELOW TEST USING SCSS. CLASSIC CSS COMMENTED-->
+    <!-- VS Code extension Live Sass Compiler -->
+    <!-- <link rel="stylesheet" href="./assets/scss/style.css" /> -->
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <title>Tripadvisor</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="flex-item mobile-bar visibleXs">
+          <i class="fas fa-bars"></i>
+        </div>
+        <a class="flex-item" href="/index.html">
+          <img class="logo" src="./assets/images/logo-horizontal.svg" alt="" />
+        </a>
+        <div class="flex-item search-mobile visibleXs">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="flex-item search">
+          <input type="text" />
+        </div>
+        <nav class="flex-item menu">
+          <a href=""> <i class="fas fa-pencil-alt"></i> <span>Avis</span></a>
+          <a href=""> <i class="fas fa-heart"></i> <span>Voyages</span></a>
+          <a href=""> <i class="far fa-bell"></i> <span>Alertes</span></a>
+          <button class="connect" type="submit">Connectez-vous</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="title">
+            <h1><span>Explorez</span> Paris</h1>
+            <p class="baseline">
+              Les revenus influencent le choix des expériences présentées sur
+              cette page : en savoir plus.
+            </p>
+          </div>
+          <div class="navigation-container">
+            <nav class="navigation">
+              <a
+                href="https://www.tripadvisor.fr/Hotels-g187147-Paris_Ile_de_France-Hotels.html"
+                class="item"
+              >
+                <p>Hôtels</p>
+                <i class="fas fa-bed"></i>
+              </a>
+              <a
+                href="https://www.tripadvisor.fr/Attractions-g187147-Activities-Paris_Ile_de_France.html"
+                class="item"
+              >
+                <p>Activités</p>
+                <i class="fas fa-ticket-alt"></i>
+              </a>
+              <a
+                href="https://www.tripadvisor.fr/VacationRentals-g187147-Reviews-Paris_Ile_de_France-Vacation_Rentals.html"
+                class="item"
+              >
+                <p>Locations de vacances</p>
+                <i class="fas fa-hotel"></i>
+              </a>
+
+              <a
+                href="https://www.tripadvisor.fr/Restaurants-g187147-Paris_Ile_de_France.html"
+                class="item"
+              >
+                <p>Restaurants</p>
+                <i class="fas fa-utensils"></i>
+              </a>
+              <a
+                href="https://www.tripadvisor.fr/ShowForum-g187147-i14-Paris_Ile_de_France.html"
+                class="item"
+              >
+                <p>Forums de voyage</p>
+                <i class="far fa-comment-alt"></i>
+              </a>
+
+              <a href="" class="item">
+                <p>Plus</p>
+                <i class="fas fa-ellipsis-h"></i>
+              </a>
+              <div class="item visibleXs">
+                <p>Vols</p>
+                <i class="fas fa-plane"></i>
+              </div>
+              <div class="item visibleXs">
+                <p>Vols</p>
+                <i class="fas fa-plane"></i>
+              </div>
+            </nav>
+            <div class="chevron-right visibleXs">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+
+          <div class="galery">
+            <div class="btn-pictures">
+              <i class="fas fa-image"></i>
+              <span>Toutes les photos</span>
+            </div>
+            <div class="main-img">
+              <img src="./assets/images/laseine.jpg" alt="" />
+            </div>
+            <div class="secondary-img">
+              <div>
+                <img src="./assets/images/caption.jpg" alt="" />
+              </div>
+              <div>
+                <img src="./assets/images/eiffel.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="breadcrumb">
+            <ul>
+              <li>
+                <a href="">Europe</a>
+                <span>></span>
+              </li>
+              <li>
+                <a href="">France</a>
+                <span>></span>
+              </li>
+              <li>
+                <a href="">Ile-de-France</a>
+                <span>></span>
+              </li>
+              <li>
+                <a href="">Paris</a>
+                <i class="fas fa-caret-down"></i>
+              </li>
+            </ul>
+            <p>Visiter : Paris</p>
+          </div>
+          <div class="about">
+            <div class="about-item">
+              <h2>A propos de Paris</h2>
+              <p>
+                On dit que Paris est la plus belle ville du monde. Et elle a
+                quelque chose de magique ! Comment résister aux charmes des
+                immeubles haussmanniens en pierre et fer forgé, des trottoirs
+                parsemés de bistrot pittoresques et des rives de la Seine ? Mais
+                Paris, c’est aussi la cuisine : les fins gourmets apprécieront
+                les classiques croissants dorés au beurre et les plats
+                traditionnels comme le coq au vin. Mais les nombreux restaurants
+                de cuisine internationale inventive font aujourd’hui la part
+                belle à la nouvelle scène culinaire française qui mélange les
+                saveurs (les falafels de la rue des Rosiers sont tout simplement
+                à tomber). Laissez-vous aller à la flânerie dans les ruelles
+                cachées, dans les musées renommés et les boutiques spécialisées.
+                À la nuit tombée, rendez-vous sur le Champ-de-Mars pour profiter
+                d'une vue imprenable sur les illuminations de la tour Eiffel.
+              </p>
+            </div>
+            <div class="about-item">
+              <div class="banner">
+                <h2>Paris : commencez à organiser !</h2>
+                <p>
+                  Créez un voyage pour enregistrer et organiser toutes vos idées
+                  et les visualiser sur une carte
+                </p>
+                <button>Créez un voyage</button>
+              </div>
+              <img src="./assets/images/maps.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-utils">
+        <div class="container">
+          <h2>Paris : les immanquables</h2>
+
+          <!--Premier UTILS-->
+          <div class="utils">
+            <div class="description">
+              <h3>Que faire</h3>
+              <p>
+                Les endroits emblématiques et les expériences incontournables
+                qui caractérisent cette ville
+              </p>
+              <a href="">Tout afficher</a>
+            </div>
+            <div class="carousel-container">
+              <div class="arrow-container">
+                <i class="fas fa-arrow-left fa-lg"></i>
+              </div>
+              <div class="arrow-container">
+                <i class="fas fa-arrow-right fa-lg"></i>
+              </div>
+              <div class="carousel">
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/eiffeltoren.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>La Tour Eiffel</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>142 375</span>
+                  </div>
+                  <p href="">
+                    Tours et plateformes d'observation, Monuments & Points
+                    d'intérêt
+                  </p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img
+                      src="./assets/images/cour-napoleon-et-pyramide.jpg"
+                      alt=""
+                    />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Musée du Louvre</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>142 375</span>
+                  </div>
+                  <p href="">Bâtiments architecturaux, Musées d'art</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img
+                      src="./assets/images/arc-de-triomphe-at-night.jpg"
+                      alt=""
+                    />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Arc de TRiomphe</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>142 375</span>
+                  </div>
+                  <p href="">Bâtiments architecturaux, Sites historiques</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/rodin.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Musée Rodin Paris VII</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>12 702</span>
+                  </div>
+                  <p href="">Musées spécialisés</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/the-bookstore.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Librairie Shakespeare and Company Paris V</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>4 008</span>
+                  </div>
+                  <p href="">Bibliothèques, Grands magasins</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/notre-dame.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Cathédrale Notre-Dame de Paris</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>71 623</span>
+                  </div>
+                  <p href="">Bâtiments architecturaux, Sites historiques</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/orsay.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Musée d'Orsay</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>67 141</span>
+                  </div>
+                  <p href="">Musées d'art</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/puces.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Marché aux Puces de Saint-Ouen</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>888</span>
+                  </div>
+                  <p href="">Antiquaires, Marchés aux puces & Marchés de rue</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/basilique.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Basilique du Sacré-Coeur de Montmarte</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>39 352</span>
+                  </div>
+                  <p href="">Eglises et cathédrales</p>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img
+                      src="./assets/images/jardin-des-tuileries.jpg"
+                      alt=""
+                    />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Jardin des Tuileries Paris I</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>7 689</span>
+                  </div>
+                  <p href="">Jardins</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième Utils-->
+          <div class="utils">
+            <div class="description">
+              <h3>Où sejourner</h3>
+              <p>
+                Les meilleurs hébergements, qu'ils soient charmants, classiques
+                ou modernes
+              </p>
+              <a href="">Tout afficher</a>
+            </div>
+            <div class="carousel-container">
+              <div class="arrow-container">
+                <i class="fas fa-arrow-left fa-lg"></i>
+              </div>
+              <div class="arrow-container">
+                <i class="fas fa-arrow-right fa-lg"></i>
+              </div>
+              <div class="carousel">
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img
+                      src="./assets/images/grand-hotel-du-palais.jpg"
+                      alt=""
+                    />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Grand Hotel du Palais Royal</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>1 458</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/superior-room.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Hotel Esprit Saint Germain</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>719</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img
+                      src="./assets/images/studio-fpr-3-persons.jpg"
+                      alt=""
+                    />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Cadet Residence</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>755</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/le-bistrol.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>La Bistrol de Paris</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>2 260</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/reserve.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>La Réserve Paris - Hotel and Spa</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>587</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/four-seasons.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Four Seasons Hotel George V</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>3 233</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/crillon.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Hôtel de Crillon, A Rosewood Hotel</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>783</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/meurice.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Le Meurice</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>1406</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/hidden.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Hidden Hotel</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>1 911</span>
+                  </div>
+                </a>
+                <a href="" class="item-carousel">
+                  <div class="picture">
+                    <img src="./assets/images/saint-germain.jpg" alt="" />
+                    <div class="heart-container">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="picto-container">
+                      <img
+                        class="picto"
+                        src="./assets/images/TC_LL.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h4>Hôtel Signature Saint Germain des Près</h4>
+                  <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span>1 907</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-interests">
+        <div class="container">
+          <h2>Explorez Paris en fonction de vos centres d'intérêt</h2>
+          <div class="interests-container">
+            <div class="interests-title">
+              <h3>Paris l'automne</h3>
+              <p>Découvrez ce qui rend la ville si spéciale en cette saison</p>
+            </div>
+            <div class="interests-pictures">
+              <div class="carousel-container">
+                <div class="arrow-container">
+                  <i class="fas fa-arrow-left fa-lg"></i>
+                </div>
+                <div class="arrow-container">
+                  <i class="fas fa-arrow-right fa-lg"></i>
+                </div>
+                <div class="carousel">
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/luxembourg.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Jardin du Luxembourg</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>35 392</span>
+                    </div>
+                    <p href="">Jardins, Parcs</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/pere-lachaise.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Cimetière du Père-Lachaise</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>6795</span>
+                    </div>
+                    <p href="">Cimetières, Monuments & Point d'intérêt</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/montmartre.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Montmarte</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>20312</span>
+                    </div>
+                    <p href="">Sentiers historiques, Quartiers</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/palais-royal.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Jardins du Palais Royal Paris I</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>751</span>
+                    </div>
+                    <p href="">Jardins</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/garnier.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Palais Garnier</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>19 905</span>
+                    </div>
+                    <p href="">Bâtiments archtecturaus, Théâtres</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/plantes.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Jardin des Plantes</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>4 023</span>
+                    </div>
+                    <p href="">Jardins</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/vosges.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Place des Vosges Paris IVy</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>5 729</span>
+                    </div>
+                    <p href="">Monuments & Points d'intérêt</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/catacombes.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <span>FORTE DEMANDE</span>
+                    <h4>Visite des catacombes de Paris avec accès spécial</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>556</span>
+                    </div>
+                    <p href="">à partir de 102€ par adulte</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/angelina.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>Angeline Paris</h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>11 216</span>
+                    </div>
+                    <p href="">€€-€€€ Française, Végétariens bienvenus</p>
+                  </a>
+                  <a href="" class="item-carousel">
+                    <div class="picture">
+                      <img src="./assets/images/paleontologie.jpg" alt="" />
+                      <div class="heart-container">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="picto-container">
+                        <img
+                          class="picto"
+                          src="./assets/images/TC_LL.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <h4>
+                      Galeries de Paléontologie et d'Anatomie Comparée Paris V
+                    </h4>
+                    <div class="dots">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <span>166</span>
+                    </div>
+                    <p href="">Musée d'histoire naturelle</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="infos">
+          <div class="footer-nav">
+            <div class="picto-trip">
+              <img src="./assets/images/logo-trip.svg" alt="" />
+            </div>
+            <div class="footer-links">
+              <span>© 2023 Tripadvisor LLC Tous droits réservés.</span>
+              <ul>
+                <li><a href=""> Conditions d'utilisation</a></li>
+                <li>
+                  <a href=""> Confidentialité et utilisation des cookies</a>
+                </li>
+                <li><a href=""> Accord d'utilisation des cookies</a></li>
+                <li><a href=""> Plan du site</a></li>
+                <li><a href=""> Fonctionnement du site</a></li>
+                <li><a href=""> Contactez-nous</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="legal">
+            <p>
+              Cette version de notre site internet s'adresse aux personnes
+              parlant Français en France. Si vous habitez un autre pays ou une
+              autre région, merci de choisir la version de Tripadvisor
+              appropriée pour votre pays ou région dans le menu déroulant.
+              <a href="">plus</a>
+            </p>
+          </div>
+        </div>
+        <div class="country-currency"></div>
+      </div>
+    </footer>
+
+    <div class="modal d-none">
+      <form action="">
+        <i class="close-modal far fa-times-circle"></i>
+        <h2>Formulaire de connexion</h2>
+        <div class="response">
+          <p></p>
+        </div>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          value=""
+          placeholder="Prénom"
+          required
+        />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          value=""
+          placeholder="Nom"
+        />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value=""
+          placeholder="Email"
+          required
+        />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          value=""
+          placeholder="Subject"
+          required
+        />
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Ecrivez ici votre message..."
+          required
+        ></textarea>
+
+        <button class="submit-form" type="submit">Envoyer le formulaire</button>
+      </form>
+    </div>
+  </body>
+</html>

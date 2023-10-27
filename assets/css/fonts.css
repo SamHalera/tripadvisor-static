@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "TS-Reg"; /* <== On donne un nom unique */
+  src: url("../fonts/TripSans-Regular.eot") format("embedded-opentype"),
+    /* <== On donne l'emplacement du fichier de police et on précise le format pour être sûr que le navigateur ne se trompe pas en le devinant à partir de l'extension du fichier */
+      url("../fonts/TripSans-Regular.woff2") format("woff2"),
+    url("../fonts/TripSans-Regular.woff") format("woff"),
+    url("../fonts/TripSans-Regular.ttf") format("truetype"),
+    url("../fonts/TripSans-Regular.svg") format("svg");
+  font-weight: normal; /* <== On définit le poids de la police */
+  font-style: normal; /* <== On définit le style de la police */
+  font-display: swap; /* <== On spécifie le comportement d'affichage de la police. Ca indique que le navigateur doit afficher une police de secours immédiatement, puis charger la police personnalisée en arrière-plan. */
+}
+
+@font-face {
+  font-family: "TS-Med";
+  src: url("../fonts/TripSans-Medium.eot") format("embedded-opentype"),
+    url("../fonts/TripSans-Medium.woff2") format("woff2"),
+    url("../fonts/TripSans-Medium.woff") format("woff"),
+    url("../fonts/TripSans-Medium.ttf") format("truetype"),
+    url("../fonts/TripSans-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

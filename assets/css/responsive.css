@@ -1,0 +1,147 @@
+/*-------------------------*/
+/*----RESPONSIVE DESIGN----*/
+/*-------------------------*/
+
+@media (max-width: 1036px) {
+  /* header .flex-item {
+    flex: 1;
+  }
+  header .search input {
+    width: 100%;
+  } */
+  .menu a span {
+    display: none;
+  }
+  .navigation .item {
+    width: 23%;
+  }
+  .navigation .item.visibleXs {
+    display: flex;
+  }
+  .about .about-item:last-child {
+    display: none;
+  }
+
+  .utils .description {
+    width: 30%;
+  }
+  .galery {
+    height: 300px;
+  }
+  .carousel-container {
+    width: 70%;
+  }
+  .carousel .item-carousel {
+    width: 40%;
+  }
+  .interests-pictures .arrow-container {
+    top: 135px;
+  }
+
+  .interests-pictures .carousel-container {
+    width: 100%;
+  }
+  .interests-pictures .carousel .item-carousel {
+    width: 32%;
+  }
+  footer .container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .visibleXs {
+    display: block;
+  }
+  header .flex-item {
+    flex: 0;
+  }
+  header .search,
+  header .menu {
+    display: none;
+  }
+  .flex-item .search-mobile {
+    margin-right: 6px;
+  }
+
+  .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+    justify-content: start;
+  }
+  .navigation .item {
+    flex-shrink: 0;
+    padding: 10px;
+    min-width: fit-content;
+    border-radius: 14px;
+  }
+  .galery .main-img {
+    width: 100%;
+  }
+  .galery .secondary-img {
+    display: none;
+  }
+  .navigation-container {
+    position: relative;
+  }
+  .chevron-right {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    font-size: 23px;
+    background-color: rgb(255 255 255 / 92%);
+    padding: 21px 20px;
+  }
+
+  .about .about-item:first-child p {
+    font-size: 16px;
+  }
+
+  .container-utils .utils {
+    flex-direction: column;
+    height: auto;
+  }
+  .utils .description {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-container {
+    width: 100%;
+  }
+  .carousel {
+    height: auto;
+  }
+  .carousel .item-carousel {
+    width: 84%;
+    height: 100%;
+  }
+  .carousel-container .arrow-container {
+    top: 160px;
+  }
+  .carousel .item-carousel,
+  .interests-pictures .carousel .item-carousel {
+    width: 66%;
+  }
+  .interests-pictures .arrow-container {
+    top: 194px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-container .arrow-container {
+    top: 114px;
+  }
+  .interests-pictures .arrow-container {
+    top: 194px;
+  }
+  .modal {
+    padding: 24px;
+  }
+  form {
+    padding: 40px 24px;
+  }
+  form input,
+  textarea {
+    width: 100%;
+  }
+}
