@@ -128,6 +128,11 @@
 }
 
 @media (max-width: 576px) {
+  div.connect {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
   .carousel-container .arrow-container {
     top: 114px;
   }
@@ -139,6 +144,10 @@
   }
   form {
     padding: 40px 24px;
+  }
+  form i {
+    top: 8px;
+    right: 12px;
   }
   form input,
   textarea {
