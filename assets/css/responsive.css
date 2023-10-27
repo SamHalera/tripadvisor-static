@@ -142,12 +142,24 @@
   .modal {
     padding: 24px;
   }
+  .response {
+    padding: 12px;
+    font-size: 14px;
+  }
   form {
     padding: 40px 24px;
   }
   form i {
+    height: 90vh;
     top: 8px;
     right: 12px;
+    gap: 10px;
+  }
+  form h2 {
+    margin-bottom: 8px;
+  }
+  form input {
+    height: 45px;
   }
   form input,
   textarea {
